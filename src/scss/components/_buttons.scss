@@ -1,0 +1,23 @@
+%number-btn-base {
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    border-width: 0;
+    &:hover {
+        cursor: pointer;
+        color: $btn-text-active-color;
+        background-color: $btn-hover-background-color;
+        box-shadow: 0px 6px 6px -3px rgb(0 0 0 / 20%), 0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+    }
+}
+
+.number-btn {
+    @extend %number-btn-base;
+    background-color: $btn-text-background-color;
+}
+
+.active-number-btn {
+    @extend %number-btn-base;
+    color: $btn-text-active-color;
+    background-color: $btn-active-background-color;
+}

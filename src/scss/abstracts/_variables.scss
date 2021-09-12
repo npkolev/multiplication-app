@@ -1,0 +1,31 @@
+// Base
+$body-background-color: #e5e5e5;
+
+// Layout
+$grid-width: 75rem;
+$gutter-horizontal: 1rem;
+$gutter-vertical: 1rem;
+// Button
+$btn-active-background-color: #2196f3;
+$btn-hover-background-color: #0d47a1;
+$btn-text-background-color: #f5f5f5;
+$btn-text-active-color: #fff;
+
+// Breakpoints
+$breakpoints: (
+    'sm': (
+        min-width: 576px
+    ),
+    'md': (
+        min-width: 768x
+    ),
+    'lg': (
+        min-width: 992px
+    ),
+    'xl': (
+        min-width: 1200px
+    ),
+    'xxl': (
+        min-width: 1400px
+    )
+) !default;

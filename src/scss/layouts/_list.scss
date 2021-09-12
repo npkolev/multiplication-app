@@ -1,0 +1,21 @@
+body {
+    background-color: $body-background-color;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    max-width: $grid-width;
+    margin: {
+        top: 0.5rem;
+        bottom: 0.5rem;
+    }
+    @include respond-above('xl') {
+        margin: {
+            left: 20%;
+            right: 20%;
+        }
+    }
+}
