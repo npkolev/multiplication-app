@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import ListItem from './ListItem';
+import { isMultipleNum } from '../utils/helpers';
 
 const List = () => {
     // Keep track of the selected number box in the local state
@@ -9,9 +10,6 @@ const List = () => {
     const selectedNumber = useCallback((e) => {
         setSelectedNum(e.currentTarget.value);
     }, []);
-
-    // Check if the current number has no remainder when divided by the value of the licked button
-    const isMultipleNum = (number, currentNumber) => number % currentNumber === 0;
 
     // Create a new array of components with set length of 144
     const numbersList = Array(144)

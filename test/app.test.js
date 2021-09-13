@@ -1,7 +1,11 @@
-import app from '../src/app';
+import React from 'react';
+import { screen, render, cleanup } from '@testing-library/react';
+import App from '../src/App';
 
-describe('app', function () {
-    it('does nothing', function () {
-        expect(true).toBe(true);
+describe('The app component', () => {
+    afterEach(cleanup);
+
+    it('should render the App component successfully', () => {
+        render(<App />);
     });
 });
