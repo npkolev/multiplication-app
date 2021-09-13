@@ -73,3 +73,21 @@ define highlighting).
 -   Meeting the requirements
 
 The test won’t be assessed on design at all, so don’t worry how it looks.
+
+# Notes
+
+## Tool selection and code decisions
+
+The application was coded while using the provided basic app while making the least number of changes possible. I believe this to be a biggger challange than using something that is ready to go such as CRA.
+
+I have decided against using Typescript for this excercise as it seems to fit the label overengineering. If the application was larger this would have been the natural choice but with a a couple or React components that do not have much in terms of data and props this seems unnecessary. 
+
+SCSS partially falls into the same category. However, it is more sensible to split everything in partials that clearly handle different tasks, rather than keep the code in the same file. 
+
+React Testing Library was added to complement Jest in testing the components, data and interactions. 
+
+ESLint helps with the error checking and is a must-have tool to add. 
+
+As a personal choice, I prefer to keep the app components as simple as possible. In normal circumstances the contents of App are a bit more than the single components that is returned now. 
+
+Keeping the number array generation within the List component was one of the possible choices to make. Alternatively, the array could have been added to the helpers.js file and populated with the numbers up to and including 144. When mapped upon within List, it would return the ListItem components. 
